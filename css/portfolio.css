@@ -31,7 +31,7 @@ main {
                          "about"
                          "gallery"
                          "projects"
-                         "contact";
+                         "resources";
     row-gap: 50px;
 }
 
@@ -182,7 +182,7 @@ nav ul li:hover {
     flex-direction: column;
     align-items: center;
     
-    flex: 1 0 300px;
+    flex: 1 0 250px;
     margin: 10px;
     transition: scale 0.5s;
 }
@@ -297,9 +297,9 @@ nav ul li:hover {
     margin: 0px;
 }
 
-/* Contact Styling */
-#contact {
-    grid-area: contact;
+/* Resources Styling */
+#resources {
+    grid-area: resources;
     display: flex;
     justify-content: space-between;
 
@@ -308,7 +308,7 @@ nav ul li:hover {
     border-radius: 0;
 }
 
-#contact h3 {
+#resources h3 {
     font-size: 2.5rem;
 }
 
@@ -329,7 +329,7 @@ nav ul li:hover {
 
 footer {
     width: 30%;
-    height: 50%;
+    height: 70%;
     background-color: #119DA4;
     margin: 0;
     padding: 10px;
@@ -371,11 +371,7 @@ footer a:hover {
 
 @media screen and (max-width: 1225px) { /* Reshape footer and nav bar */
 
-    footer {
-        height: 40%;
-    }
-
-    #contact footer h3 {
+    #resources footer h3 {
         font-size: 2rem;
     }
 
@@ -445,7 +441,7 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 725px) { /* Reshape bio, project cards, contact form */
+@media screen and (max-width: 725px) { /* Reshape bio, project cards, resources */
     /* Gallery */
     .gallery-card {
         flex: 1 0 200px;
@@ -481,8 +477,8 @@ footer a:hover {
         width: 100%;
     }
 
-    /* Contact Form */
-    #contact {
+    /* Resources */
+    #resources {
         flex-direction: column-reverse;
         align-items: center;
     }
